@@ -13,7 +13,6 @@ RUN apt-get -q update && \
       wget \
       curl \
       apt-transport-https \
-      software-properties-common \
     && \
     apt-get -y autoremove && \
     apt-get -y autoclean && \
