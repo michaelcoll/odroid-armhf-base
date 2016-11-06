@@ -5,6 +5,9 @@ MAINTAINER Michael COLL <mick.coll@gmail.com>
 ENV DEBIAN_FRONTEND="noninteractive" \
     TERM="xterm"
 
+# Enable parallel downloads in apt
+RUN echo 'Acquire::Queue-Mode "host";' >> /etc/apt/apt.conf
+
 RUN apt-get -q update && \
     apt-get -qy dist-upgrade && \
     apt-get install -qy \
