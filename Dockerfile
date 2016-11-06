@@ -1,4 +1,4 @@
-FROM michaelcoll/armhf-ubuntu:16.04
+FROM michaelcoll/armhf-ubuntu
 
 MAINTAINER Michael COLL <mick.coll@gmail.com>
 
